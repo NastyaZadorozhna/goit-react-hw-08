@@ -8,14 +8,15 @@ const SearchBox = () => {
   const dispatch = useDispatch();
 
   return (
-    <label className={styles.searchBox}>
-      <span style={{ fontSize: "17px", marginBottom: "5px" }}>
-        Find contacts by name or number
+    <label className={styles.searchContainer}>
+      <span style={{ fontSize: "20px", marginBottom: "5px" }}>
+        Find contacts
       </span>
       <input
-        className={styles.searchInp}
+        className={styles.searchInput}
         type="text"
         name="filter"
+        placeholder="Search contacts..."
         value={filter}
         onChange={(evt) => {
           dispatch(changeFilter(evt.target.value));

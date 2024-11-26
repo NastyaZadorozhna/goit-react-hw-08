@@ -19,11 +19,9 @@ const Contact = ({ id, name, number }) => {
 
   return (
     <div className={styles.contactConteiner}>
-      <div className={styles.contactItem}>
-        <p><span className={styles.icon}></span>{name}</p>
-        <p><span className={styles.icon}></span>{number}</p>
-      </div>
-      <button className={styles.btn} type="button" onClick={handleClick}>Delete</button>
+        <p><span className={styles.contactName}></span>{name}</p>
+        <p><span className={styles.contactPhone}></span>{number}</p>
+      <button className={styles.deleteButton} type="button" onClick={handleClick}>Delete</button>
       {isModalOpen && <Modal id={id} onModalClose={onModalClose} />}
     </div>
   );

@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  justify-content: space-around align-items: center;
+  margin-bottom: 16px;
+  position: fixed;
+  height: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 15px;
+  z-index: 6;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
